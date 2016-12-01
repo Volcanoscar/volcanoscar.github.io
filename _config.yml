@@ -22,12 +22,12 @@ description: 改变不能够接受的  接受不能够改变的 !
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "关于我"
-  Resources:
+  关于我: "关于我"
+  Blog :
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://volcanoscar.github.io"
+  Home Page: "http://volcanoscar.github.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -38,20 +38,20 @@ avatar: "/img/avatar.jpg"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: Volcanoscar
   email: "Volcanoscar@gmail.com"
   facebook: volcanoskar.peng  # eg. daattali
   github: Volcanoscar    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
+  twitter: Volcanoscar   # eg. daattali
+  reddit: Volcanoscar    # eg. daattali
+  google-plus: +Volcanoscar   # eg. +DeanAttali or 109424658772469020925
+  linkedin: Volcanoscar  # eg. daattali
+  xing: Volcanoscar      # eg. daattali
+  stackoverflow: Volcanoscar  # eg. "3943160/daattali"
+  snapchat: Volcanoscar  # eg. daattali
+  instagram: Volcanoscar # eg. daattali
+  youtube: Volcanoscar   # eg. user/daattali or channel/daattali
+  spotify: Volcanoscar   # eg. daattali
 
 # Select which links to show in the footer
 footer-links-active:
