@@ -22,7 +22,7 @@ description: 改变不能够接受的  接受不能够改变的 !
 
 # List of links in the navigation bar
 navbar-links:
-  About Me:: "关于我"
+  About Me: "关于我"
   Resources :
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
