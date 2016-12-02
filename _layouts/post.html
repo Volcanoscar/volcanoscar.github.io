@@ -1,52 +1,34 @@
 ---
-layout: base
+layout: default
+css: ['sidebar-post-nav.css']
 ---
+{% include jumbotron.html %}
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
 
-{% include header.html type="post" %}
+    <div class="row">
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {% if page.no-post-nav %}
+        <div class="col-md-12 markdown-body">
 
-      <article role="main" class="blog-post">
-        {{ content }}
-      </article>
+            {{ content }}
 
-      {% if page.tags.size > 0 %}
-        <div class="blog-tags">
-          Tags:
-          {% if site.link-tags %}
-          {% for tag in page.tags %}
-            <a href="/tag/{{ tag }}">{{ tag }}</a>
-          {% endfor %}
-          {% else %}
-            {{ page.tags | join: ", " }}
-          {% endif %}
+            <!-- Comments -->
+            {% include disqus-comments.html %}
         </div>
-      {% endif %}
+        {% else %}
+        <div class="col-md-8 markdown-body">
 
-      {% if page.social-share %}
-        {% include social-share.html %}
-      {% endif %}
+            {{ content }}
 
-      <ul class="pager blog-pager">
-        {% if page.previous.url %}
-        <li class="previous">
-          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-        </li>
-        {% endif %}
-        {% if page.next.url %}
-        <li class="next">
-          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-        </li>
-        {% endif %}
-      </ul>
-
-      {% if page.comments %}
-        <div class="disqus-comments">
-          {% include disqus.html %}
+            <!-- Comments -->
+            {% include disqus-comments.html %}
         </div>
-      {% endif %}
+
+        <div class="col-md-4">
+            {% include sidebar-post-nav.html %}
+        </div>
+        {% endif %}
+
     </div>
-  </div>
-</div>
+
+</article>
